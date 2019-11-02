@@ -1,0 +1,30 @@
+void main() {
+  var hydrogen = new element(1,1,0);
+  var helium = new element(2,2,2);
+  var lithium = new element(3,3,4);
+  var beryllium = new element(4,4,5);
+  
+  print(hydrogen.proton);
+    
+}
+
+
+class element{
+  int proton;
+  int neutron;
+  int electron;
+  element(int valuep, int valuee, int valuen){
+    proton = valuep;
+    electron = valuee;
+    neutron = valuen;
+  }
+ 
+}
+
+/*class metals extends elements{
+  
+}
+
+class nonmetals extends elements{
+  
+}*/
