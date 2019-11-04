@@ -1,0 +1,54 @@
+import "package:flutter/material.dart";
+import 'metal.dart';
+
+class elementlist extends StatelessWidget{
+
+    @override
+    Widget build(BuildContext context) {
+        return Scaffold(
+            appBar: AppBar(
+                title: Text("Elements of the World are in three main chategories"),
+            ),
+            body: ListView(
+                children: <Widget>[
+
+                    ListTile(
+                        leading: Icon(Icons.adjust),
+                        title: Text("Metals"),
+                        trailing: Text("91 elements"),
+                        subtitle: Text("17 element currently built"),
+                        onTap: (){
+                            debugPrint("metals was selected");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => metal()),
+                            );
+                        }
+                    ),
+                   ],
+            ));
+    }
+}
+
+class DetailScreen extends StatelessWidget {
+    // Declare a field that holds the Todo.
+    final String todo;
+
+    // In the constructor, require a Todo.
+    DetailScreen({Key key, @required this.todo}) : super(key: key);
+
+    @override
+    Widget build(BuildContext context) {
+        // Use the Todo to create the UI.
+        return Scaffold(
+            appBar: AppBar(
+                title: Text(todo),
+            ),
+            body: Padding(
+                padding: EdgeInsets.all(16.0),
+                child: Text(todo),
+            ),
+        );
+    }
+}
