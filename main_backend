@@ -1,30 +1,73 @@
-void main() {
-  var hydrogen = new element(1,1,0);
-  var helium = new element(2,2,2);
-  var lithium = new element(3,3,4);
-  var beryllium = new element(4,4,5);
-  
-  print(hydrogen.proton);
-    
-}
+import 'package:flutter/material.dart';
+import 'element.dart';
 
+void main() => runApp(MyFlutterApp());
 
-class element{
-  int proton;
-  int neutron;
-  int electron;
-  element(int valuep, int valuee, int valuen){
-    proton = valuep;
-    electron = valuee;
-    neutron = valuen;
+class MyFlutterApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: "My Flutter App",
+        home: Scaffold(
+            appBar: AppBar(title: Text("Assisted Technologies"), ),
+            body: insider()
+        )
+    );
   }
- 
 }
 
-/*class metals extends elements{
-  
+class insider extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+        child: Container(
+            alignment: Alignment.topCenter,
+            color: Colors.lightBlue[600],
+            //width: 200.0,
+            //height: 100.0,
+            child:
+            Column(
+              children: <Widget>[
+                Expanded(
+                    child: Text(
+                      "Welcome to the Edwin Meriaux's Chemistry Phone Application",
+                      textDirection: TextDirection.ltr,
+                      style: TextStyle(
+                          decoration: TextDecoration.none,
+                          fontSize: 35.0,
+                          color: Colors.black.withOpacity(0.8)
+                      ),
+                    )),
+              secondpage()
+
+              ],
+
+            )
+        )
+    );
+  }
 }
 
-class nonmetals extends elements{
-  
-}*/
+
+class secondpage extends StatelessWidget {
+    @override
+    Widget build(BuildContext context) {
+        return Container(
+            margin: EdgeInsets.only(bottom: 35),
+            width: 250,
+            height: 50,
+            child: RaisedButton(
+                color: Colors.deepOrange,
+                child: Text("Element Information"),
+                elevation: 10.0,
+                onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => elementlist()),
+                    );
+                },)
+        );
+    }
+}
