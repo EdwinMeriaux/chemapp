@@ -16,7 +16,7 @@ class elementlist extends StatelessWidget{
                         leading: Icon(Icons.adjust),
                         title: Text("Metals"),
                         trailing: Text("91 elements"),
-                        subtitle: Text("17 element currently built"),
+                        subtitle: Text("17"),
                         onTap: (){
                             debugPrint("metals was selected");
                             Navigator.push(
