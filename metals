@@ -283,6 +283,54 @@ class metal extends StatelessWidget{
                                 ),
                             );
                         }
+                    ),
+
+                    ListTile(
+                        leading: Icon(Icons.adjust),
+                        title: Text("Gallium"),
+                        //trailing: Text("2 wings"),
+                        //subtitle: Text("Left and Right Halls are housing"),
+                        onTap: (){
+                            debugPrint("Gallium");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DetailScreen(todo: [31,'gallium']),
+                                ),
+                            );
+                        }
+                    ),
+
+                    ListTile(
+                        leading: Icon(Icons.adjust),
+                        title: Text("Rubidium"),
+                        //trailing: Text("2 wings"),
+                        //subtitle: Text("Left and Right Halls are housing"),
+                        onTap: (){
+                            debugPrint("Rubidium");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DetailScreen(todo: [37,'rubidium']),
+                                ),
+                            );
+                        }
+                    ),
+
+                    ListTile(
+                        leading: Icon(Icons.adjust),
+                        title: Text("Strontium"),
+                        //trailing: Text("2 wings"),
+                        //subtitle: Text("Left and Right Halls are housing"),
+                        onTap: (){
+                            debugPrint("Strontium");
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => DetailScreen(todo: [38,'strontium']),
+                                ),
+                            );
+                        }
                     )
 
 
@@ -300,7 +348,8 @@ class DetailScreen extends StatelessWidget {
     static var helium = new element("Helium",2,2,2);
     static var lithium = new element("Lithium",3,3,4);
     static var beryllium = new element("Beryllium",4,4,5);
-    */static List<String> hydrogen = ["assets/hydrogen.jpg","Hydrogen","1","1","0"];
+    */
+    static List<String> hydrogen = ["assets/hydrogen.jpg","Hydrogen","1","1","0"];
     static List<String> helium = ["assets/helium.jpg","Helium","2","2","2"];
     static List<String> lithium = ["assets/lithium.jpg","Lithium","3","3","4"];
     static List<String> beryllium = ["assets/beryllium.jpg","Beryllium","4","4","5"];
@@ -330,9 +379,20 @@ class DetailScreen extends StatelessWidget {
     static List<String> nickel = ["assets/nickel.jpg","Nickel","28","28","31"];
     static List<String> copper = ["assets/copper.jpg","Copper","29","29","35"];
     static List<String> zinc = ["assets/zinc.jpg","Zinc","30","30","35"];
+    static List<String> gallium = ["assets/gallium.jpg","Gallium","31","31","39"];
+    static List<String> germanium = ["assets/germanium.jpg","Germanium","32","32","41"];
+    static List<String> arsenic = ["assets/arsenic.jpg","Arsenic","33","33","42"];
+    static List<String> selenium = ["assets/selenium.jpg","Selenium","34","34","45"];
+    static List<String> bromine = ["assets/bromine.jpg","Bromine","35","35","45"];
+    static List<String> krypton = ["assets/krypton.jpg","Krypton","36","36","46"];
+    static List<String> rubidium = ["assets/rubidium.jpg","Rubidium","37","37","49"];
+    static List<String> strontium = ["assets/strontium.jpg","Strontium","38","38","50"];
+
 
     static List allelements = [hydrogen,helium,lithium,beryllium,boron,carbon,nitrogen,oxygen,fluorine,neon,sodium,magnesium,aluminium,silicon,phosphorus,sulfur,
-                            chlorine,argon,potassium,calcium,scandium,titanium,vanadium,chromium,manganese,iron,cobalt,nickel,copper,zinc];
+                            chlorine,argon,potassium,calcium,scandium,titanium,vanadium,chromium,manganese,iron,cobalt,nickel,copper,zinc,gallium,germanium,arsenic,
+                            selenium,bromine,krypton,rubidium,strontium
+                            ];
     //static List allelementsname = [hydrogen.name,helium.name,lithium.name,beryllium.name];
     //static List allelementspnumer = [hydrogen.proton,helium.proton,lithium.proton,beryllium.proton];
     //static List allelementsenumer = [hydrogen.electron,helium.electron,lithium.electron,beryllium.electron];
@@ -388,4 +448,10 @@ class element{
         neutron = valuen;
     }
 
+}
+
+String chemval(){
+
+
+    return "1";
 }
