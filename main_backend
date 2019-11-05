@@ -78,3 +78,52 @@ class secondpage extends StatelessWidget {
         );
     }
 }
+
+String chemval(value,value1){
+    final List<String> hydrogen = ["assets/hydrogen.jpg","Hydrogen","1","1","0"];
+    final List<String> helium = ["assets/helium.jpg","Helium","2","2","2"];
+    final List<String> lithium = ["assets/lithium.jpg","Lithium","3","3","4"];
+    final List<String> beryllium = ["assets/beryllium.jpg","Beryllium","4","4","5"];
+    final List<String> boron = ["assets/boron.jpg","Boron","5","5","6"];
+    final List<String> carbon = ["assets/carbon.jpg","Carbon","6","6","6"];
+    final List<String> nitrogen = ["assets/nitrogen.jpg","Nitrogen","7","7","7"];
+    final List<String> oxygen = ["assets/oxygen.jpg","Oxygen","8","8","8"];
+    final List<String> fluorine = ["assets/fluorine.jpg","Fluorine","9","9","10"];
+    final List<String> neon = ["assets/neon.jpg","Neon","9","9","10"];
+    final List<String> sodium = ["assets/sodium.jpg","Sodium","11","11","12"];
+    final List<String> magnesium = ["assets/magnesium.jpg","Magnesium","12","12","12"];
+    final List<String> aluminium = ["assets/aluminium.jpg","Aluminium","13","13","14"];
+    final List<String> silicon = ["assets/silicon.jpg","14","14","14"];
+    final List<String> phosphorus = ["assets/phosphorus.jpg","Phosphorus","15","15","16"];
+    final List<String> sulfur = ["assets/sulfur.jpg","Sulfur","16","16","16"];
+    final List<String> chlorine = ["assets/chlorine.jpg","Chlorine","17","17","14"];
+    final List<String> argon = ["assets/argon.jpg","Argon","18","18","22"];
+    final List<String> potassium = ["assets/potassium.jpg","Potassium","19","19","20"];
+    final List<String> calcium = ["assets/calcium.jpg","Calcium","20","20","20"];
+    final List<String> scandium = ["assets/scandium.jpg","Scandium","21","21","24"];
+    final List<String> titanium = ["assets/titanium.jpg","Titanium","22","22","26"];
+    final List<String> vanadium = ["assets/vanadium.jpg","Vanadium","23","23","28"];
+    final List<String> chromium = ["assets/chromium.jpg","Chromium","24","24","28"];
+    final List<String> manganese = ["assets/manganese.jpg","Manganese","25","25","30"];
+    final List<String> iron = ["assets/iron.jpg","Iron","26","26","30"];
+    final List<String> cobalt = ["assets/cobalt.jpg","Cobalt","27","27","32"];
+    final List<String> nickel = ["assets/nickel.jpg","Nickel","28","28","31"];
+    final List<String> copper = ["assets/copper.jpg","Copper","29","29","35"];
+    final List<String> zinc = ["assets/zinc.jpg","Zinc","30","30","35"];
+    final List<String> gallium = ["assets/gallium.jpg","Gallium","31","31","39"];
+    final List<String> germanium = ["assets/germanium.jpg","Germanium","32","32","41"];
+    final List<String> arsenic = ["assets/arsenic.jpg","Arsenic","33","33","42"];
+    final List<String> selenium = ["assets/selenium.jpg","Selenium","34","34","45"];
+    final List<String> bromine = ["assets/bromine.jpg","Bromine","35","35","45"];
+    final List<String> krypton = ["assets/krypton.jpg","Krypton","36","36","46"];
+    final List<String> rubidium = ["assets/rubidium.jpg","Rubidium","37","37","49"];
+    final List<String> strontium = ["assets/strontium.jpg","Strontium","38","38","50"];
+
+
+    final List allelements = [hydrogen,helium,lithium,beryllium,boron,carbon,nitrogen,oxygen,fluorine,neon,sodium,magnesium,aluminium,silicon,phosphorus,sulfur,
+        chlorine,argon,potassium,calcium,scandium,titanium,vanadium,chromium,manganese,iron,cobalt,nickel,copper,zinc,gallium,germanium,arsenic,
+        selenium,bromine,krypton,rubidium,strontium
+    ];
+
+    return allelements[value][value1];
+}
