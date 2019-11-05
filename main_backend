@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'element.dart';
 
-void main() => runApp(MyFlutterApp());
+
+
+void main(){
+    runApp(MyFlutterApp());
+    }
 
 class MyFlutterApp extends StatelessWidget{
   @override
@@ -19,6 +23,9 @@ class MyFlutterApp extends StatelessWidget{
 }
 
 class insider extends StatelessWidget {
+
+
+
   @override
   Widget build(BuildContext context) {
     return Center(
